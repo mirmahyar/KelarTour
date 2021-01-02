@@ -2,14 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
-
+import {TourProvider} from "./context"
 
 ReactDOM.render(
-  <React.StrictMode>
+  
+  <TourProvider>
     <Router>
     <App />
     </Router>
-  </React.StrictMode>,
+  </TourProvider>,
+    
+  
   document.getElementById('root')
 );
 
